@@ -34,7 +34,7 @@ Contenu du fichier :
 - `A190302` : `1 ≤ a190302 n ∧ a190302 n < 6` pour `n ≥ 1` — la clause
   `1 ≤` exclut la vacuité (`sInf ∅ = 0 < 6` serait un faux positif) ;
 - `A190302_lt_six` : corollaire verbatim de la conjecture ;
-- valeurs OEIS `a(1)..a(21)` vérifiées sur les exemples de la fiche.
+- onze valeurs de la fiche vérifiées ponctuellement (spot-check).
 -/
 
 section A190302
@@ -230,7 +230,7 @@ theorem A190302 (n : ℕ) (hn : 1 ≤ n) : 1 ≤ a190302 n ∧ a190302 n < 6 := 
 theorem A190302_lt_six (n : ℕ) (hn : 1 ≤ n) : a190302 n < 6 :=
   (A190302 n hn).2
 
-/-! ### Vérification des valeurs de la fiche (testé sur `n ≤ 21`) -/
+/-! ### Vérification ponctuelle — onze valeurs de la fiche (spot-check) -/
 
 example : a190302 1 = 1 :=
   a190302_eq_one_of_pow (d := 0) (by decide) (by decide)
