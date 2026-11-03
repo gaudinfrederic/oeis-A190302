@@ -1,0 +1,41 @@
+{
+  "title": "A190302 — a(n) < 6 for all n, Frohlich conjecture (Lean 4)",
+  "description": "theorem A190302: for every n >= 1, the smallest h >= 1 such that the decimal expansion of n*h starts with 1 satisfies 1 <= a(n) < 6. Proves the OEIS conjecture (Felix Frohlich, 2018, verified to n = 10022141) via the exact formula a(n) = 1 if the leading digit of n is 1, else a(n) = ceil(10^(d+1)/n) with d = floor(log10 n); bound ceil(10^(d+1)/(2*10^d)) = 5. Bound asserted without proof by Greathouse 2011 on A187285; first written proof and first formalization. Standard axioms only; zero native_decide.",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "Gaudin, Frederic"
+    }
+  ],
+  "license": {
+    "id": "Apache-2.0"
+  },
+  "keywords": [
+    "OEIS",
+    "digit",
+    "decimal expansion",
+    "leading digit",
+    "Lean 4",
+    "mathlib",
+    "formal proof",
+    "theorem prover",
+    "A190302",
+    "A187285",
+    "conjecture",
+    "exact formula"
+  ],
+  "version": "1.0.0",
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.23879088",
+      "relation": "references",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    }
+  ],
+  "custom": {
+    "code:theoremStatus": "theorem-unconditional",
+    "code:leanToolchain": "leanprover/lean4:v4.35.0",
+    "code:mathlibVersion": "v4.35.0"
+  }
+}
