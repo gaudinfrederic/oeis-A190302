@@ -39,8 +39,8 @@ strengthened clause `1 ≤ a190302 n` rules out vacuity —
 `sInf ∅ = 0 < 6` would otherwise be a false positive.
 `A190302_lt_six` is the verbatim `a(n) < 6` corollary, and
 `a190302_eq_one` / `a190302_eq_ceilDiv` export the exact
-formula. OEIS values `a(1)..a(21)` are checked against the
-entry by `decide`.
+formula. Eleven OEIS entry values are spot-checked by
+`decide` (see the `example`s in `A190302.lean`).
 
 ## Status
 
