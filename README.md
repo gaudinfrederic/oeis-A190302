@@ -1,6 +1,6 @@
 # A190302 — a(n) < 6 for all n (Fröhlich conjecture), formalized in Lean 4
 
-[![CI](https://github.com/USERNAME/a190302-lean/actions/workflows/ci.yml/badge.svg)](https://github.com/USERNAME/a190302-lean/actions/workflows/ci.yml)
+[![CI](https://github.com/gaudinfrederic/oeis-A190302/actions/workflows/ci.yml/badge.svg)](https://github.com/gaudinfrederic/oeis-A190302/actions/workflows/ci.yml)
 
 Machine-checked proof of the conjecture on
 [OEIS A190302](https://oeis.org/A190302) (Jaroslav Krizek, 2011):
