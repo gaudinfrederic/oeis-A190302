@@ -60,8 +60,8 @@ entry by `decide`.
 
 The bound `a(n) ≤ 5` was **asserted without proof** by
 Charles R Greathouse IV (2011) in the comments of
-[OEIS A187285](https://oeis.org/A187285) ("the least multiple
-of n beginning with 1 is < 5n"). This repository provides,
+[OEIS A187285](https://oeis.org/A187285) ("a(n) is in
+{n, 2n, 3n, 4n, 5n}"). This repository provides,
 to our knowledge, the **first written proof** and the
 **first formalization** — the result is not claimed as a new
 conjecture or bound.
