@@ -85,7 +85,7 @@ lake env lean -M 4096 -j 2 A190302.lean   # -> exit 0
 
 ## Reference
 
-Companion note `A190302.md` in the project package;
+Companion note `A190302-paper.md` in the project package;
 sibling: *Prescribed digit sums in residue classes and a
 conjecture of Murthy (OEIS A077754)*, F. Gaudin —
 https://doi.org/10.5281/zenodo.23879088
