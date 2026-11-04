@@ -256,5 +256,6 @@ example : a190302 21 = 5 := by
   rw [a190302_eq_ceilDiv_of_pow (d := 1) (by decide) (by decide)]; decide
 
 #print axioms A190302
+#print axioms A190302_lt_six
 
 end A190302

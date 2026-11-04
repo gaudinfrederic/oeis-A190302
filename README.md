@@ -68,15 +68,19 @@ The bound `a(n) ≤ 5` was **asserted without proof** by
 Charles R Greathouse IV (2011) in the comments of
 [OEIS A187285](https://oeis.org/A187285) ("a(n) is in
 {n, 2n, 3n, 4n, 5n}"). This repository provides,
-to our knowledge, the **first written proof** and the
-**first formalization** — the result is not claimed as a new
-conjecture or bound.
+to our knowledge as of 2026-11-04, the **first
+written proof** and the **first machine-checked formalization**
+(search corpus: OEIS entry, formal-conjectures, trureturing,
+AlphaProof/sequencelib registries, global code search) — the result
+is not claimed as a new conjecture or bound.
 
 ## Reproduce
 
 ```sh
-lake build        # installs toolchain via elan, fetches mathlib cache
-lake env lean A190302.lean
+# elan installs leanprover/lean4:v4.35.0 via lean-toolchain
+lake exe cache get              # fetches mathlib v4.35.0 oleans
+lake env lean -M 4096 -j 2 A190302.lean   # -> exit 0
+# equivalent: lake build
 ```
 
 ## Reference
