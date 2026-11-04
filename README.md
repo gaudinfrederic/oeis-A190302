@@ -14,9 +14,15 @@ formula**: writing `d = ⌊log₁₀ n⌋` (`10^d ≤ n < 10^{d+1}`),
 - `a(n) = 1` when the leading digit of `n` is `1`
   (`n < 2·10^d`);
 - `a(n) = ⌈10^{d+1} / n⌉` otherwise — the first multiple
-  `≥ 10^{d+1}` lands in `[10^{d+1}, 2·10^{d+1})`, and no
-  smaller positive multiple can start with `1`. The bound
-  `⌈10^{d+1} / (2·10^d)⌉ = 5` follows.
+  `≥ 10^{d+1}` lands in `[10^{d+1}, 2·10^{d+1})` (indeed
+  `n·h < 10^{d+1} + n < 2·10^{d+1}` since `h < 10^{d+1}/n + 1`
+  and `n < 10^{d+1}`), and no smaller positive multiple can
+  start with `1`. The bound `⌈10^{d+1} / (2·10^d)⌉ = 5`
+  follows.
+
+"Starts with the digit `1`" means the ordinary base-10
+representation of `n·h` (no leading zeros) begins with `1`,
+i.e. `n·h ∈ [10^k, 2·10^k)` for some `k ≥ 0`.
 
 ## Theorem
 
