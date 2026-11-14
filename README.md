@@ -55,10 +55,15 @@ formula. Eleven OEIS entry values are spot-checked by
 - `#print axioms A190302` - `[propext, Classical.choice,
  Quot.sound]` - the three standard axioms only. **No
  `native_decide`, no `sorryAx`.**
+- The featured theorem `A190302`, exported with its
+ transitive dependency closure, was re-verified by three
+ independent reimplementations of the Lean 4 kernel
+ (permitted axioms restricted to the same three). Export
+ files and replay instructions are archived with the record.
 
 ## Contents
 
-- `A190302.lean` - the theorem file (260 lines,
+- `A190302.lean` - the theorem file (261 lines,
  self-contained: `import Mathlib` only, no project
  dependencies)
 
@@ -67,9 +72,9 @@ formula. Eleven OEIS entry values are spot-checked by
 The bound `a(n) ≤ 5` was **asserted without proof** by
 Charles R Greathouse IV (2011) in the comments of
 [OEIS A187285](https://oeis.org/A187285) ("a(n) is in
-{n, 2n, 3n, 4n, 5n}"). This repository provides a written
+{n, 2n, 3n, 4n, 5n}"). This work provides a written
 proof and a machine-checked formalization in Lean 4
-(anteriority audit of 2026-11-04, corpus: OEIS entry,
+(prior-art check of 2026-11-04, corpus: OEIS entry,
 formal-conjectures, trureturing, AlphaProof/sequencelib
 registries, global code search) - the result is not claimed
 as a new conjecture or bound.
@@ -90,5 +95,5 @@ https://doi.org/10.5281/zenodo.23957595
 
 Companion note `A190302-paper.md` in the project package;
 sibling: *Prescribed digit sums in residue classes and a
-conjecture of Murthy (OEIS A077754)*, F. Gaudin -
+conjecture of Murthy (OEIS A077754)*, Frédéric Gaudin -
 https://doi.org/10.5281/zenodo.23879088
